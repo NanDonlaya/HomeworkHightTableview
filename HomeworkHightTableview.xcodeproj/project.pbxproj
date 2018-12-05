@@ -16,6 +16,7 @@
 		3612F31A21880E34000A1D1B /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3612F31821880E34000A1D1B /* TableViewCell.xib */; };
 		3612F31D21880E46000A1D1B /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3612F31B21880E46000A1D1B /* CollectionViewCell.swift */; };
 		3612F31E21880E46000A1D1B /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3612F31C21880E46000A1D1B /* CollectionViewCell.xib */; };
+		BE5943A3F9D801CDD523218D /* Pods_HomeworkHightTableview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED63D22D214D8A939F47F62 /* Pods_HomeworkHightTableview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		3612F31821880E34000A1D1B /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3612F31B21880E46000A1D1B /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3612F31C21880E46000A1D1B /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		4CE43D3FF0991AB78AF2E3D3 /* Pods-HomeworkHightTableview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeworkHightTableview.release.xcconfig"; path = "Pods/Target Support Files/Pods-HomeworkHightTableview/Pods-HomeworkHightTableview.release.xcconfig"; sourceTree = "<group>"; };
+		CED63D22D214D8A939F47F62 /* Pods_HomeworkHightTableview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeworkHightTableview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4020574E5AB271E362DA817 /* Pods-HomeworkHightTableview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeworkHightTableview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HomeworkHightTableview/Pods-HomeworkHightTableview.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5943A3F9D801CDD523218D /* Pods_HomeworkHightTableview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				3612F30421880B09000A1D1B /* HomeworkHightTableview */,
 				3612F30321880B09000A1D1B /* Products */,
+				D4A1E6E159B2C05CA9D94385 /* Pods */,
+				7E12BA51646667363F39AD0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +115,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		7E12BA51646667363F39AD0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED63D22D214D8A939F47F62 /* Pods_HomeworkHightTableview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4A1E6E159B2C05CA9D94385 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4020574E5AB271E362DA817 /* Pods-HomeworkHightTableview.debug.xcconfig */,
+				4CE43D3FF0991AB78AF2E3D3 /* Pods-HomeworkHightTableview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3612F31421880B0A000A1D1B /* Build configuration list for PBXNativeTarget "HomeworkHightTableview" */;
 			buildPhases = (
+				7CE95E5A2F5141ABD64B21AB /* [CP] Check Pods Manifest.lock */,
 				3612F2FE21880B09000A1D1B /* Sources */,
 				3612F2FF21880B09000A1D1B /* Frameworks */,
 				3612F30021880B09000A1D1B /* Resources */,
+				7B8E1705D8321AFB37A41837 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +201,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B8E1705D8321AFB37A41837 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HomeworkHightTableview/Pods-HomeworkHightTableview-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Agrume/Agrume.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agrume.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HomeworkHightTableview/Pods-HomeworkHightTableview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE95E5A2F5141ABD64B21AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeworkHightTableview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3612F2FE21880B09000A1D1B /* Sources */ = {
@@ -328,6 +407,7 @@
 		};
 		3612F31521880B0A000A1D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4020574E5AB271E362DA817 /* Pods-HomeworkHightTableview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -348,6 +428,7 @@
 		};
 		3612F31621880B0A000A1D1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CE43D3FF0991AB78AF2E3D3 /* Pods-HomeworkHightTableview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
